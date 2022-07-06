@@ -27,6 +27,7 @@ export const computeFibonacciNumber = (position: number| null): number => {
     return j;
 };
 
+<<<<<<< HEAD
 const computeNegativeFibonacci = (position: number): number => {
     if (position >= 0) {
         throw new Error(`Position must be less than zero! Received: ${position}.`);
@@ -35,6 +36,8 @@ const computeNegativeFibonacci = (position: number): number => {
     const absoluteResult = computeFibonacciNumber(-position);
     return resultIsNegative ? absoluteResult * -1 : absoluteResult;
 }
+=======
+>>>>>>> 2e9b65d39820a06fe1ad1fb280c1f17b99b4bb31
 export const computeFibonacciArray = (start: number, endInclusive: number): number[] => {
     const inputArray = [...Array(endInclusive - start + 1).keys()].map(i => i + start);
     return inputArray.map(x => computeFibonacciNumber(x));
