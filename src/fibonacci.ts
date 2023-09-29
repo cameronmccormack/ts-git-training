@@ -8,13 +8,13 @@ export const computeFibonacciNumber = (position: number | null): number => {
         return computeNegativeFibonacci(position);
     }
 
-    if (notNullPosition <= 2) {
-        return 1;
-    }
-
     let notNullPosition = position;
     if (notNullPosition === null) {
         notNullPosition = 1;   
+    }
+
+    if (notNullPosition <= 2) {
+        return 1;
     }
 
     let i = 1;
